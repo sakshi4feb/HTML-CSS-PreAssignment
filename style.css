@@ -112,6 +112,10 @@ nav ul{
         max-width: 70%;
         margin:auto;
         }
+    .footerbar{
+        gap:20px;
+    }
+
    
 }
 /*responsiveness code ends here  */
