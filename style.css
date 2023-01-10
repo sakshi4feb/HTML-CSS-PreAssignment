@@ -1,0 +1,117 @@
+/* reset and common code starts here  */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+a {
+    color:white;
+  }
+/* reset and common code ends here  */  
+
+/* navbar code starts here  */
+.navigation{
+    background-color:#333333;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    max-width: 100%;
+    margin-bottom:40px;
+    }
+nav ul{
+    
+    max-width:80%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+    margin:auto;
+    }
+ /* navbar code ends here  */
+ 
+ /* team members section code starts here  */
+.team-members{
+    max-width:80%;
+    text-align: center;
+    margin:auto;
+    }
+ .image{
+    height:200px;
+    width:100%;
+    }
+ .column{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap:5px;
+    }
+.card {
+    flex: 33%;
+    border: 1px solid black;
+    margin-bottom:5px;
+    }
+.label{
+    background-color: #696969;
+    color:white;
+    text-align: center;
+    padding:15px;
+    }
+/* team members section code ends here  */
+
+/* footer code starts here  */
+.footer{
+    padding :20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#333333;
+    color:white;
+    }
+.footerbar{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    gap:30px;
+    }
+.footer-center p{
+    display: inline-block;
+    }
+.footer-center i{
+    margin: 5px 10px;
+    }
+.about{
+   text-align: center;
+   width:400px;
+   margin-right:20px;
+   }
+.about p{
+    text-align: justify;
+    margin: 8px;
+    }  
+/* footer code ends here  */
+
+/*responsiveness code starts here  */
+@media screen and (max-width:1300px) {
+    .footer{
+        flex-direction: column;
+        gap : 3rem;
+        }
+}
+@media screen and (max-width:700px) {
+    nav ul {
+        flex-direction: column;
+        gap:.2rem;
+        }
+
+    .card {
+        flex: 100%;
+        max-width: 70%;
+        margin:auto;
+        }
+   
+}
+/*responsiveness code ends here  */
